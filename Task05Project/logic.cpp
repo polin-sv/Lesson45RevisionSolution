@@ -17,13 +17,20 @@ void reverse(int array[DEFAULT_SIZE], int size, int a, int b) {
 		b = temp;
 	}
 
-	int n = (a + b) / 2;
 
-	for (int i = a; i < n; i++)
+	int n = (b - a) / 2;
+
+	for (int i = a; i <= a+n; i++)
 	{
 		int temp = array[i];
+		
 		array[i] = array[b];
+		
 		array[b] = temp;
+		
+
 		b--;
+		
 	}
+
 }

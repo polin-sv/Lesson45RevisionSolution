@@ -13,9 +13,11 @@ void print(int array[DEFAULT_SIZE], int expected[DEFAULT_SIZE], int size,
 	int a, int b, string name) {
 
 	reverse(array, size, a, b);
+	
 
 	bool result = true;
 
+	
 	for (int i = 0; i < size; i++)
 	{
 		if (array[i] != expected[i]) {
